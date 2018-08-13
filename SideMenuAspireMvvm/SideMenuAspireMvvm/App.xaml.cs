@@ -3,7 +3,6 @@ using MvvmAspire;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SideMenuAspireMvvm
 {
     public partial class App : Application

@@ -5,7 +5,7 @@ using MvvmAspire.Unity;
 using SideMenuAspireMvvm.ViewModels;
 using SideMenuAspireMvvm.Views;
 using Unity;
-using Unity.Lifetime;
+using Xamarin.Forms;
 
 namespace SideMenuAspireMvvm
 {
@@ -17,12 +17,12 @@ namespace SideMenuAspireMvvm
         {
             container = new UnityContainer();
             var resolver = new UnityDependencyResolver(container);
-            container.RegisterType<IDataService, DataService>(new ContainerControlledLifetimeManager());
+           // container.RegisterType<IDataService, DataService>(new ContainerControlledLifetimeManager());
 
             if (!forBackgroundService)
             {
                 Resolver.SetResolver(resolver);
-                container.RegisterInstance<INavigation>(RegisterNavigation());
+                container.RegisterInstance<MvvmAspire.Services.INavigation>(RegisterNavigation());
                 RegisterMapping();
             }
             return resolver;
@@ -42,10 +42,12 @@ namespace SideMenuAspireMvvm
         /// Registration of Navigation MVVM
         /// </summary>
         /// <returns></returns>
-        public static INavigation RegisterNavigation()
+        public static MvvmAspire.Services.INavigation RegisterNavigation()
         {
             var navigation = new XamarinFormsNavigation(() => App.Current);
             navigation.Register<LoginViewModel, LoginPage>();
+            navigation.Register<MasterNavigationPageViewModel, MasterNavigationPage>();
+            navigation.Register<HomeViewModel, HomePage>();
             return navigation;
         }
 

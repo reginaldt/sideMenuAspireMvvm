@@ -24,7 +24,7 @@ namespace SideMenuAspireMvvm.ViewModels
         async void Login()
         {
             LoginCommand.CanRun = false;
-            await Navigation.PushAsync<MasterNavigationPageViewModel>();
+            await Navigation.SetMasterPageAsync<MasterNavigationPageViewModel,HomeViewModel>();
             LoginCommand.CanRun = true;
 
         }

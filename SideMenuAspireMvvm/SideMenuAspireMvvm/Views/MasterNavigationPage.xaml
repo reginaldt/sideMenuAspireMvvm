@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SideMenuAspireMvvm.Views.MasterNavigationPage">
-    <ContentPage.Content>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SideMenuAspireMvvm.Views.MasterNavigationPage">
         <MasterDetailPage.Master>
+        <ContentPage 
+                Title="Menu">
             <StackLayout>
-                <ListView ItemsSource="{Binding MenuList}" x:Name="listView">
+                <ListView ItemsSource="{Binding MenuList}">
                    
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -14,13 +15,13 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
          <!--                           <Image Source="{Binding IconSource}" />-->
-                                    <Label Grid.Column="1" Text="{Binding Title}" />
+                                     <Label Grid.Column="1" Text="{Binding Name}" TextColor="Black" />
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
+        </ContentPage>
         </MasterDetailPage.Master>
-    </ContentPage.Content>
-</ContentPage>
+</MasterDetailPage>
