@@ -48,6 +48,7 @@ namespace SideMenuAspireMvvm
             navigation.Register<LoginViewModel, LoginPage>();
             navigation.Register<MasterNavigationPageViewModel, MasterNavigationPage>();
             navigation.Register<HomeViewModel, HomePage>();
+            navigation.Register<AboutViewModel, AboutPage>();
             return navigation;
         }
 

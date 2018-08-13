@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SideMenuAspireMvvm.Views.MasterNavigationPage">
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:mvvmaspire="clr-namespace:MvvmAspire.Controls;assembly=MvvmAspire" x:Class="SideMenuAspireMvvm.Views.MasterNavigationPage" IsPresented="{Binding IsMenuVisible,Mode=TwoWay}">
         <MasterDetailPage.Master>
         <ContentPage 
                 Title="Menu">
             <StackLayout>
-                <ListView ItemsSource="{Binding MenuList}">
+                <ListView ItemsSource="{Binding MenuList}" SelectedItem="{Binding SelectedMenu}">
                    
                     <ListView.ItemTemplate>
                         <DataTemplate>
