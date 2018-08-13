@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{D39FCCCD-72F4-4AAB-8E05-742D14B77471}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SideMenuAspireMvvm/bootstrap.cs">
+    <Files>
+      <File FileName="SideMenuAspireMvvm/bootstrap.cs" Line="7" Column="13" />
+      <File FileName="SideMenuAspireMvvm/Views/LoginPage.xaml" Line="9" Column="1" />
+      <File FileName="SideMenuAspireMvvm/Views/HomePage.xaml" Line="2" Column="132" />
+      <File FileName="SideMenuAspireMvvm/Views/AboutPage.xaml" Line="10" Column="1" />
+      <File FileName="SideMenuAspireMvvm/App.xaml.cs" Line="13" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SideMenuAspireMvvm.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EEE92CA5-269E-49AD-B239-567E0CE2E6A1" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SideMenuAspireMvvm.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>

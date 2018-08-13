@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:mvvmaspire="clr-namespace:MvvmAspire.Controls;assembly=MvvmAspire" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SideMenuAspireMvvm.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <mvvmaspire:Label Text="Home Page" TextColor="Black">
+            </mvvmaspire:Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
