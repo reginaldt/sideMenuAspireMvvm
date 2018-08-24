@@ -13,24 +13,21 @@ namespace SideMenuAspireMvvm.ViewModels
         private Menu _selectedMenu;
         public Menu SelectedMenu
         {
-            get { return _selectedMenu; }
+            get => _selectedMenu; 
             set
             {
                 SetProperty(ref _selectedMenu, value);
                 if (value != null)
                     SelectedMenuCommand.Execute(value);
-
             }
         }
 
         private Boolean _isMenuVisible;
         public Boolean IsMenuVisible
         {
-            get { return _isMenuVisible; }
-            set 
-            {
-                SetProperty(ref _isMenuVisible, value);      
-            }
+            get => _isMenuVisible; 
+            set => SetProperty(ref _isMenuVisible, value);
+
         }
 
         public MasterNavigationPageViewModel()
@@ -39,7 +36,6 @@ namespace SideMenuAspireMvvm.ViewModels
                 new Menu { Name = "Home", Code = "mnu_home"},
                 new Menu { Name = "About", Code = "mnu_about"}
             };
-
 
             SelectedMenuCommand = new RelayCommand<Menu>(async (menu) =>
             {
@@ -59,8 +55,16 @@ namespace SideMenuAspireMvvm.ViewModels
                 SelectedMenuCommand.CanRun = true;
             });
 
+
+
         }
-            
+
+        public override void Init()
+        {
+            base.Init();
+            SelectedMenu = MenuList[0];
+        }
+
 
     }
 }

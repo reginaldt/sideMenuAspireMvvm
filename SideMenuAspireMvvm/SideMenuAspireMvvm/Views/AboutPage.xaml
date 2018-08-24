@@ -5,7 +5,7 @@
              x:Class="SideMenuAspireMvvm.Views.AboutPage">
     <ContentPage.Content>
         <StackLayout>
-            <mvvmaspire:Label Text="About Page" TextColor="Black">
+            <mvvmaspire:Label Text="About Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black">
             </mvvmaspire:Label>
         </StackLayout>
     </ContentPage.Content>

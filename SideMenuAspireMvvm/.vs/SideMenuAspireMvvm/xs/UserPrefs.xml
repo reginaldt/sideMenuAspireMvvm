@@ -1,15 +1,20 @@
 ﻿<Properties StartupConfiguration="{D39FCCCD-72F4-4AAB-8E05-742D14B77471}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SideMenuAspireMvvm/Views/MasterNavigationPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SideMenuAspireMvvm/App.xaml">
     <Files>
-      <File FileName="SideMenuAspireMvvm/bootstrap.cs" Line="43" Column="23" />
-      <File FileName="SideMenuAspireMvvm/Views/LoginPage.xaml" Line="7" Column="108" />
+      <File FileName="SideMenuAspireMvvm/bootstrap.cs" Line="54" Column="9" />
+      <File FileName="SideMenuAspireMvvm/Views/LoginPage.xaml" Line="11" Column="1" />
       <File FileName="SideMenuAspireMvvm/Views/HomePage.xaml" Line="12" Column="1" />
       <File FileName="SideMenuAspireMvvm/Views/AboutPage.xaml" Line="13" Column="1" />
       <File FileName="SideMenuAspireMvvm/App.xaml.cs" Line="21" Column="10" />
-      <File FileName="SideMenuAspireMvvm/ViewModels/MasterNavigationViewModel.cs" Line="60" Column="37" />
-      <File FileName="SideMenuAspireMvvm/Views/MasterNavigationPage.xaml" Line="3" Column="33" />
+      <File FileName="SideMenuAspireMvvm/ViewModels/MasterNavigationViewModel.cs" Line="65" Column="40" />
+      <File FileName="SideMenuAspireMvvm/Views/MasterNavigationPage.xaml" Line="2" Column="239" />
       <File FileName="SideMenuAspireMvvm.iOS/Main.cs" Line="21" Column="1" />
-      <File FileName="SideMenuAspireMvvm/ViewModels/LoginViewModel.cs" Line="21" Column="34" />
+      <File FileName="SideMenuAspireMvvm/ViewModels/LoginViewModel.cs" Line="15" Column="56" />
+      <File FileName="SideMenuAspireMvvm/ViewModels/AppViewModel.cs" Line="28" Column="9" />
+      <File FileName="SideMenuAspireMvvm/Models/Menu.cs" Line="10" Column="1" />
+      <File FileName="SideMenuAspireMvvm/ViewModels/HomeViewModel.cs" Line="14" Column="1" />
+      <File FileName="SideMenuAspireMvvm/ViewModels/AboutViewModel.cs" Line="14" Column="1" />
+      <File FileName="SideMenuAspireMvvm/App.xaml" Line="5" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

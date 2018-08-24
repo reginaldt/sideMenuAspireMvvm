@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SideMenuAspireMvvm.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <mvvmaspire:Label Text="Home Page" TextColor="Black">
+            <mvvmaspire:Label Text="Home Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black">
             </mvvmaspire:Label>
         </StackLayout>
     </ContentPage.Content>
